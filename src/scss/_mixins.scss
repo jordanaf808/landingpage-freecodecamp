@@ -1,0 +1,31 @@
+/* Scss Map */
+
+// for desktop
+// target styles "on this screen size and larger" e.g. "min-width" */
+// 640, 1024, 1400px
+$breakpoints-up: (
+  'small': '40em',
+  'medium': '64em',
+  'large': '87.5em'
+);
+
+//for mobile
+// target styles "on this screen size and smaller" e.g. "max-width" */
+// 639, 1023, 1399px
+$breakpoints-down: (
+  'small': '39.9735em',
+  'medium': '63.9735em',
+  'large': '87.4375em'
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

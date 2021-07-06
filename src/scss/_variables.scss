@@ -1,13 +1,21 @@
-// ## Colors
-// ### Primary
+// # Globals
 
+// ## Colors
+
+// ### Primary
 $darkBlue: hsl(233, 26%, 24%);
 $limeGreen: hsl(136, 65%, 51%);
 $brightCyan: hsl(192, 70%, 51%);
 
 // ### Neutral
-
 $grayishBlue: hsl(233, 8%, 62%);
 $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
+
+// ### Gradients
+$grdLimeCyan: linear-gradient(to left, $limeGreen, $brightCyan);
+
+// ## Font Size
+$font-med: 1.125rem; // 18px
+$font-sm: 0.875rem; // 14px

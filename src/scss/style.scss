@@ -1,8 +1,7 @@
-@import 'variables';
-@import 'globals';
-@import 'header';
-
-body {
-  background: mediumaquamarine;
-  padding: 1em;
-}
+// @use 'mixins';
+// @use 'variables';
+// @use 'resets';
+@use 'remedy'; // css resets
+@use 'globals';
+@use 'animations';
+@use 'components/header';
