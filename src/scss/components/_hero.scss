@@ -1,0 +1,39 @@
+@use '../variables' as *;
+
+// Hero Styles
+
+.hero {
+  &__image {
+    position: relative;
+    background-color: $grdLimeCyan;
+    background: center / cover no-repeat url('src/images/bg-intro-mobile.svg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    min-height: 17.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: center bottom / 80% no-repeat
+        url('src/images/image-mockups.png');
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__text {
+    text-align: center;
+    h1 {
+      font-weight: 400;
+      font-size: 2.31rem;
+      line-height: 1.15;
+      color: $darkBlue;
+    }
+    p {
+      line-height: 1.15;
+    }
+    .hero__cta {
+      margin: 1.125rem;
+    }
+  }
+}

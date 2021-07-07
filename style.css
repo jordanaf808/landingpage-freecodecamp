@@ -388,6 +388,14 @@ button,
           animation: fade-out 300ms ease-in-out forwards;
 }
 
+.header {
+  position: fixed;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: white;
+  z-index: 1000;
+}
 .header nav {
   padding: 1.0625rem 1.5rem;
 }
@@ -477,7 +485,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 3.75rem;
+  top: 3.5rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -497,8 +505,8 @@ button,
   max-width: 28.75rem;
   margin: 1.625rem;
   padding: 1.625rem;
-  z-index: 10;
   background: white;
+  border-radius: 5px;
 }
 .header .overlay .header__mobile--menu a {
   display: block;
@@ -507,4 +515,33 @@ button,
 }
 .header .overlay .header__mobile--menu a:hover {
   opacity: 0.75;
+}
+
+.hero__image {
+  position: relative;
+  background-color: linear-gradient(to left, #31d35c, #2bb7da);
+  background: center/cover no-repeat url("src/images/bg-intro-mobile.svg");
+  min-height: 17.5rem;
+}
+.hero__image::before {
+  content: "";
+  position: absolute;
+  background: center bottom/80% no-repeat url("src/images/image-mockups.png");
+  height: 100%;
+  width: 100%;
+}
+.hero__text {
+  text-align: center;
+}
+.hero__text h1 {
+  font-weight: 400;
+  font-size: 2.31rem;
+  line-height: 1.15;
+  color: #2d314d;
+}
+.hero__text p {
+  line-height: 1.15;
+}
+.hero__text .hero__cta {
+  margin: 1.125rem;
 }/*# sourceMappingURL=style.css.map */

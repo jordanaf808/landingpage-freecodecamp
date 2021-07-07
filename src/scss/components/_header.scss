@@ -3,6 +3,13 @@
 @use '../animations' as a;
 
 .header {
+  position: fixed;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: white;
+  z-index: 1000;
+
   nav {
     padding: 1.0625rem 1.5rem;
   }
@@ -100,7 +107,7 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 3.75rem;
+    top: 3.5rem;
     right: 0;
     bottom: 0;
     left: 0;
@@ -108,14 +115,15 @@
 
     .header__mobile--menu {
       display: flex;
+      // z-index: 10;
       flex-direction: column;
       text-align: center;
       width: 90%;
       max-width: 28.75rem;
       margin: 1.625rem;
       padding: 1.625rem;
-      z-index: 10;
       background: white;
+      border-radius: 5px;
 
       a {
         display: block;
