@@ -265,6 +265,7 @@ category: legacy browsers
 body {
   line-height: 1.3;
   font-family: "Public Sans", sans-serif;
+  font-weight: 300;
   font-size: 1.125rem;
   color: #9698a6;
 }
@@ -397,7 +398,7 @@ button,
   z-index: 1000;
 }
 .header nav {
-  padding: 1.0625rem 1.5rem;
+  padding: 1.375rem;
 }
 .header__logo img {
   width: 8.8125rem;
@@ -446,8 +447,8 @@ button,
 }
 .header__mobile--burger > span {
   display: block;
-  width: 26px;
-  height: 2px;
+  width: 1.56rem;
+  height: 1px;
   background-color: #2d314d;
   opacity: 0.75;
   -webkit-transform-origin: 3px 1px;
@@ -456,7 +457,7 @@ button,
   transition: all 200ms ease-in-out;
 }
 .header__mobile--burger > span:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 .header__mobile--burger:hover > span {
   opacity: 1;
@@ -517,11 +518,18 @@ button,
   opacity: 0.75;
 }
 
+.hero {
+  margin-bottom: 3.875rem;
+}
+.hero > * {
+  margin-bottom: 1.625rem;
+}
 .hero__image {
   position: relative;
   background-color: linear-gradient(to left, #31d35c, #2bb7da);
   background: center/cover no-repeat url("src/images/bg-intro-mobile.svg");
-  min-height: 17.5rem;
+  min-height: 17rem;
+  width: 100%;
 }
 .hero__image::before {
   content: "";
@@ -533,15 +541,16 @@ button,
 .hero__text {
   text-align: center;
 }
+.hero__text > * {
+  margin: 1rem 1.625rem;
+}
 .hero__text h1 {
-  font-weight: 400;
-  font-size: 2.31rem;
+  font-weight: 300;
+  font-size: 2.5rem;
   line-height: 1.15;
   color: #2d314d;
 }
 .hero__text p {
-  line-height: 1.15;
-}
-.hero__text .hero__cta {
-  margin: 1.125rem;
+  font-size: 0.875rem;
+  line-height: 1.75;
 }/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,10 @@
 // Hero Styles
 
 .hero {
+  margin-bottom: 3.875rem;
+  & > * {
+    margin-bottom: 1.625rem;
+  }
   &__image {
     position: relative;
     background-color: $grdLimeCyan;
@@ -10,7 +14,8 @@
     // background-size: cover;
     // background-repeat: no-repeat;
     // background-position: center;
-    min-height: 17.5rem;
+    min-height: 17rem;
+    width: 100%;
 
     &::before {
       content: '';
@@ -23,17 +28,20 @@
   }
   &__text {
     text-align: center;
+    & > * {
+      margin: 1rem 1.625rem;
+    }
     h1 {
-      font-weight: 400;
-      font-size: 2.31rem;
+      font-weight: 300;
+      font-size: 2.5rem;
       line-height: 1.15;
       color: $darkBlue;
     }
     p {
-      line-height: 1.15;
+      font-size: $font-sm;
+      line-height: 1.75;
     }
     .hero__cta {
-      margin: 1.125rem;
     }
   }
 }
